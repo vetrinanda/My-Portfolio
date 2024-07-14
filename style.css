@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Untitled\ design3.png);
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+  margin: 0 40px;
+  transition: 0.3s;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+ul li a:hover,
+ul li:hover {
+  color: white;
+  text-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+  transform: scale(1.5);
+}
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #2ca4bf;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #2ca4bf;
+}
+.button1 {
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #2ca4bf;
+  box-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.button1:hover {
+  transform: scale(1.1);
+  border-color: white;
+  box-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+}
+.social a {
+  width: 35px;
+  height: 35px;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.social a:hover {
+  text-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+}
+.left {
+  margin: 10%;
+  display: inline-block;
+}
+.text3 {
+  width: 40%;
+  font-weight: 300;
+}
+h5 {
+  font-weight: 300;
+}
+.text2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.typer {
+  overflow: hidden;
+  color: white;
+  font-size: 2.6rem;
+  text-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+}
+h6 {
+  margin-top: 10px;
+}
+.button2 {
+  
+  color: white;
+  font-size: 1.2rem;
+  background: transparent;
+  padding: 10px 30px;
+  margin: 20px 0;
+  border: 2px solid #2ca4bf;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.button2:hover {
+  transform: scale(1.1);
+  border-color: white;
+  box-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .left {
+    width: 100%;
+    margin: 0 10%;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .text2 {
+    font-size: 0.7rem;
+  }
+  .text3 {
+    width: 70%;
+  }
+  .typer {
+    font-size: 1rem;
+  }
+  .button1,
+  .button2 {
+    font-size: 0.9rem;
+    padding: 5px 15px;
+  }
+  .social {
+    font-size: 10px;
+  }
+}
